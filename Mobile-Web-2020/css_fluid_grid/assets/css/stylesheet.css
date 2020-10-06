@@ -1,0 +1,79 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Start of "Micro clearfix" */
+
+        .cf { zoom: 1; }
+        .cf:before, .cf:after { 
+          content: ""; display: table; 
+        }
+        .cf:after { clear: both; }
+
+   /* End of "Micro clearfix" */
+
+.container {
+  width:1080px;
+  background-image:url("../img/grid.png");
+  margin:20px auto;
+  border:1px solid black
+}
+
+header.primary, footer#colophon{
+  /*width:1060px;  must convert by dividing this by container's 1080px*/
+  width:98.14814814814815%;
+  background:grey;
+  float:left;
+  /*margin:20px;*/
+  margin-left:0.92592592592593%‬;
+}
+
+#content{
+  /*width:620px;*/
+  width:57.40740740740741%;
+  background:grey;
+  float:left;
+  margin-left:0.92592592592593%‬;
+  /*padding:20px;*/
+  padding-right: 01.85185185185185%;
+  
+}
+
+aside{
+  /*width:400px;*/
+  width:37.03703703703704%;
+  background:grey;
+  float:left;
+  margin-left:0.92592592592593%‬;
+  /*padding:20px;*/
+  
+}
+
+
+
+/* utility grid classes */
+.col-4{
+  width:400px;
+  background:grey;
+  float:left;
+  margin-left:20px;
+}
+
+.col-6{
+  width:610px;
+  background:grey;
+  float:left;
+  margin-left:20px;
+}
+
+.col-12{
+  width:1060px;
+  background:grey;
+  float:left;
+  margin:20px;
+}

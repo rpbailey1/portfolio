@@ -1,0 +1,50 @@
+<head>
+  <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+
+  <link
+  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+  rel="stylesheet"
+/>
+
+<!-- City -->
+<link
+  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+  rel="stylesheet"/>
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+
+<body>
+  <video class="video-js vjs-theme-city"
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="700"
+    height="400"
+    poster="assets/images/vidpostercar.jpg"
+    data-setup="{}"
+  >
+    <source src="assets/videos/krogerrun.mp4" type="video/mp4" />
+    <source src="assets/videos/krogerrun-1.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <br>
+
+  <audio controls="controls">
+<source src="thunder.ogg" type="audio/ogg" /><!-- Firefox, Opera, Chrome -->
+<source src="thunder.mp3" type="audio/mp3" /><!-- Safari, Chrome, IE9+ -->
+<source src="thunder.wav" type="audio/wav" /><!-- Safari, Opera, IE9+, Firefox -->
+<a href="thunder.mp3">Download the Audio</a>
+</audio>
+
+  <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
+</body>

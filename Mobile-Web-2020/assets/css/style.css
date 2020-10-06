@@ -1,0 +1,15 @@
+body{
+
+background-color: antiquewhite
+}
+
+body {
+  font-family: Roboto;
+  color: #ccc;
+  text-align: center;
+  font-size: 28px;
+}
+
+img {
+  border-radius: 10%;
+}

@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <meta name="description" content="Micro Data Resume">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
+      <script src="assets/javascript/js-calls.js"></script>
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+ <a name="top"></a>
+
+
+  <body>
+
+<!-- <header class="container">
+   
+  
+    <nav class="primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>  -->
+
+  <!-- Main -->
+  <main class="container"  itemscope itemtype="http://schema.org/Person">
+
+  <header class="header">
+   
+    <!-- Main navigation -->
+    <nav class="primary">
+      <a href="#about"><div class="btn">
+  <svg>
+    <rect x="0" y="0" fill="none" width="166" height="45"/>
+  </svg>
+ About
+</div></a>
+
+      <a href="#skills"><div class="btn">
+  <svg>
+    <rect x="0" y="0" fill="none" width="166" height="45"/>
+  </svg>
+ Skills
+</div></a>
+
+      <a href="#experience"><div class="btn">
+  <svg>
+    <rect x="0" y="0" fill="none" width="166" height="45"/>
+  </svg>
+ Experience
+</div></a>
+
+      <a href="#education"><div class="btn">
+  <svg>
+    <rect x="0" y="0" fill="none" width="166" height="45"/>
+  </svg>
+ Education
+</div></a>
+    </nav>
+  </header>
+
+      
+    <section id="about">
+      <h1 class="page-title">Ryan Bailey</h1>
+      <img id="selfie" itemprop="image" src="assets/img/selfie.jpg" alt="Picture of Ryan Bailey">
+      
+      <dl>
+        <dt>Name</dt>
+        <dd itemprop="name">
+          <span itemprop="givenName">Ryan</span> <span itemprop="familyName">Bailey</span>
+        </dd>
+        <dt>Date of birth</dt>
+        <dd itemprop="birthDate"><time datetime="1994-06-24">06/24/1976</time></dd>
+        <dt>Nationality</dt>
+        <dd itemprop="nationality">American</dd>
+        <dt>Location</dt>
+        <dd itemprop="homeLocation">Arkansas</dd>
+        <dt>Telephone</dt>
+        <dd>
+          <a itemprop="telephone" href="tel:501.358.8285">501.358.8285</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+          <a itemprop="email" href="mailto:ryan.bailey2222@gmail.com">ryan.bailey2222@gmail.com</a>
+        </dd>
+        <dt>Address</dt>
+
+        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">11800 Pleasant Ridge Rd apt 326</span>
+          <span itemprop="addressLocality">Little Rock</span>
+          <span itemprop="postalCode">72223</span>
+          <span itemprop="addressCountry">USA</span>
+        </dd>
+
+      </dl>
+      <ul class="related-links">
+        <li><a itemprop="url" rel="me" href="https://github.com/profile">github</a></li>
+        <li><a itemprop="url" rel="me" href="https://www.linkedin.com/in/ryan-bailey-467672199/">linkedin</a></li>
+        <li><a itemprop="url" href="assets/misc-files/resume.pdf" download>resume</a></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills:</h2>
+      <ul>
+    <li class="skill">SCSS</li>
+    <li class="skill">HTML</li>
+    <li class="skill">SQL</li>
+    <li class="skill">Microsoft Suite</li>
+    <li class="skill">Adobe Suite</li>
+      </ul>
+ <div id="1" class="gallery">
+    <img src="assets/img/dragon_1.JPG" height="485" width="520" alt="example of my Space X Dragon Website">
+    <img src="assets/img/dragon_2.JPG" height="485" width="520" alt="example of my Space X Dragon Website">
+    <img src="assets/img/illustrator1.JPG" height="485" width="520" alt="example of my Illustrator work">
+    <img src="assets/img/Illustrator2.JPG" height="485" width="520" alt="example of my Illustrator work">
+  </div>
+    
+    </section>
+    <section id="experience">
+      <h2>Experience:</h2>
+      <!-- current job -->
+      <article class="job">
+        <h3 itemprop="jobTitle">Systems Engineer</h3>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">WIRED! Technology Partners</span>
+          <span>March 2020 - Present</span>
+          <p itemprop="description">Maintain and support over 2000 computers and 200 servers both physical and virtual.</p>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+      
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Arkansas,USA</span>
+          </span>
+          </span>
+        </div>
+      </article>
+      <!-- Previous Jobs - Notice Slightly Different Format-->
+      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
+        <h3 itemprop="name">Senior Meat Cutter</h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Sams Club</span>
+          <a itemprop="url" href="http://www.sams.com">www.sams.com</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Arkansas,USA</span>
+          </span>
+          </span>
+          <span itemprop="startDate" content="2017-04-21T20:00">April, 2017</span>
+          <span itemprop="endDate" content="2019-11-22T20:00">November,2019</span>
+        <p itemprop="description">Responsible for cutting and preparing all steaks and roasts to be cut for the day, as well as grinding the beef. Maintained the overall department. Rotated product, and pulled out of date product.</p>
+      </article>
+      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
+        <h3 itemprop="name">Best Buy Sales Consultant</h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Best Buy</span>
+          <a itemprop="url" href="http://www.bestbuy.com">www.bestbuy.com</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Arkansas, USA</span>
+          </span>
+          </span>
+          <span itemprop="startDate" content="2015-05-21T20:00">May 2015</span>
+          <span itemprop="endDate" content="2017-04-15T20:00">April, 2017</span>
+        <p itemprop="description">Full time Home Theater Sales Consultant. Gave impartial advice to all customers. Built a rapport with all customers. Maintained a high sales average for all televisions and home theater equipment.</p>
+      </article>
+    </section>
+    <section id="education">
+      <h2>Education:</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Bachelors of Web Design and Development">BA</abbr> Web Design and Development</h3>
+          <span itemprop="name">University of Arkansas at Little Rock</span>
+          <span itemprop="location" itemscope>Arkansas, USA</span>
+          <span>2016-2021</span>
+      </article>
+
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Associate of Liberal Arts">AS</abbr> Associate of Liberal Arts</h3>
+          <span itemprop="name">University of Arkansas at Pulaski Tech</span>
+          <span itemprop="location" itemscope>Arkansas, USA</span>
+          <span>2016-2018</span>
+      </article>
+
+    </section>
+
+  </main>
+      <a href="#top">Back to top</a>
+  </body>
+  <!-- Footer -->
+  <footer class="container">
+  
+<!--content here-->
+
+   
+    
+  </footer>
+
+  
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+</html>

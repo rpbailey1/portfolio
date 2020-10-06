@@ -1,0 +1,10 @@
+body {
+  margin: auto;
+  background: grey;
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 8%;
+}
