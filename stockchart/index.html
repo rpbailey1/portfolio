@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Currency Value History </title>
+     <link href="assets/css/stylesheet.css" rel="stylesheet" />
+     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- https://cdnjs.com/libraries/moment.js/ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+	<!-- "https://cdnjs.com/libraries/Chart.js" -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+
+  <body>
+<form id="Currency Value History" onsubmit="return false">
+
+
+<h1> Currency Value History </h1>
+
+
+<label class="formlabel" for="Base Currency"> Base Currency: </label>
+
+  <label class="formlabel" for="Base Currency">  </label>
+<select name="Base Currency" id="Base Currency" data-rule-required="true" data-msg-required="Base Currency is required">
+    <option value="">Select a Currency...</option>
+    <option value="USD">United States Dollar</option>
+    <option value="AUD">Australian Dollar</option>
+    <option value="JPY">Japanese Yen</option>
+    <option value="MXN">Mexican Peso</option>
+    <option value="INR">Indian Rupee</option>
+</select>
+
+<label for="Base Currency" class="error"> </label>
+ <br><br>
+
+<label class="formlabel" for="Convert to Currency"> Convert to Currency: </label>
+  <label class="formlabel" for="Convert to Currency">  </label>
+<select name="Convert to Currency" id="Convert to Currency" data-rule-required="true" data-msg-required="Base Currency is required">
+    <option value="">Select a Currency...</option>
+    <option value="USD">United States Dollar</option>
+    <option value="AUD">Australian Dollar</option>
+    <option value="JPY">Japanese Yen</option>
+    <option value="MXN">Mexican Peso</option>
+    <option value="INR">Indian Rupee</option>
+</select>
+<label for="Base Currency" class="error"> </label>
+<br><br>
+
+<label class="formlabel" for="From Date">From Date: </label>
+<input type="date" id="From Date" name="From Date" size="13" maxlength="10" data-rule-required="true" data-msg-required="From Date is Required" data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format" > 
+<label for="From Date" class="error"> </label>
+
+<br><br>
+
+<label class="formlabel" for="To Date">To Date: </label>
+<input type="date" id="To Date" name="To Date" size="13" maxlength="10" data-rule-required="true" data-msg-required="To Date is Required" data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format"> 
+<label for="From Date" class="error"> </label>
+
+<br><br>
+
+  <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+ 
+  <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>
+
+  <br>
+
+
+  	<canvas id="chartjs-0" width="400" height="400"></canvas>
+
+<script src="assets/javascript/script.js"></script>
+
+</body>
+
+
+
+</html>
